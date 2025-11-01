@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
@@ -43,22 +44,34 @@
             this.lblDuracion = new System.Windows.Forms.Label();
             this.lblProductor = new System.Windows.Forms.Label();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.cbxCanal = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCanelar = new System.Windows.Forms.Button();
             this.dtpFechaCreacion = new System.Windows.Forms.DateTimePicker();
             this.txtProductor = new System.Windows.Forms.TextBox();
             this.nudDuracion = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.lblFechaCreacion = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.cbxCanal = new System.Windows.Forms.ComboBox();
+            this.erpCanal = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTitulo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpDuracion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpProductor = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpFechaCreacion = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCanal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTitulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFechaCreacion)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -113,7 +126,7 @@
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(770, 150);
+            this.dgvLista.Size = new System.Drawing.Size(766, 154);
             this.dgvLista.TabIndex = 0;
             // 
             // pnlAcciones
@@ -140,6 +153,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEditar
             // 
@@ -169,6 +183,7 @@
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnCrear
             // 
@@ -229,7 +244,7 @@
             this.gbxDatos.Controls.Add(this.dtpFechaCreacion);
             this.gbxDatos.Controls.Add(this.txtProductor);
             this.gbxDatos.Controls.Add(this.nudDuracion);
-            this.gbxDatos.Controls.Add(this.textBox1);
+            this.gbxDatos.Controls.Add(this.txtDescripcion);
             this.gbxDatos.Controls.Add(this.txtTitulo);
             this.gbxDatos.Controls.Add(this.lblFechaCreacion);
             this.gbxDatos.Controls.Add(this.lblDescripcion);
@@ -245,6 +260,15 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Ingrese los datos";
             // 
+            // cbxCanal
+            // 
+            this.cbxCanal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxCanal.FormattingEnabled = true;
+            this.cbxCanal.Location = new System.Drawing.Point(158, 21);
+            this.cbxCanal.Name = "cbxCanal";
+            this.cbxCanal.Size = new System.Drawing.Size(184, 25);
+            this.cbxCanal.TabIndex = 22;
+            // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,6 +282,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCanelar
             // 
@@ -284,9 +309,8 @@
             // 
             // txtProductor
             // 
-            this.txtProductor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtProductor.Location = new System.Drawing.Point(492, 53);
-            this.txtProductor.MaxLength = 20;
+            this.txtProductor.MaxLength = 100;
             this.txtProductor.Name = "txtProductor";
             this.txtProductor.Size = new System.Drawing.Size(184, 24);
             this.txtProductor.TabIndex = 18;
@@ -303,21 +327,19 @@
             this.nudDuracion.Size = new System.Drawing.Size(102, 24);
             this.nudDuracion.TabIndex = 17;
             // 
-            // textBox1
+            // txtDescripcion
             // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(158, 88);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 61);
-            this.textBox1.TabIndex = 16;
+            this.txtDescripcion.Location = new System.Drawing.Point(158, 88);
+            this.txtDescripcion.MaxLength = 255;
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(184, 61);
+            this.txtDescripcion.TabIndex = 16;
             // 
             // txtTitulo
             // 
-            this.txtTitulo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTitulo.Location = new System.Drawing.Point(158, 53);
-            this.txtTitulo.MaxLength = 20;
+            this.txtTitulo.MaxLength = 100;
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(184, 24);
             this.txtTitulo.TabIndex = 15;
@@ -354,14 +376,29 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // cbxCanal
+            // erpCanal
             // 
-            this.cbxCanal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxCanal.FormattingEnabled = true;
-            this.cbxCanal.Location = new System.Drawing.Point(158, 21);
-            this.cbxCanal.Name = "cbxCanal";
-            this.cbxCanal.Size = new System.Drawing.Size(184, 25);
-            this.cbxCanal.TabIndex = 22;
+            this.erpCanal.ContainerControl = this;
+            // 
+            // erpTitulo
+            // 
+            this.erpTitulo.ContainerControl = this;
+            // 
+            // erpDescripcion
+            // 
+            this.erpDescripcion.ContainerControl = this;
+            // 
+            // erpDuracion
+            // 
+            this.erpDuracion.ContainerControl = this;
+            // 
+            // erpProductor
+            // 
+            this.erpProductor.ContainerControl = this;
+            // 
+            // erpFechaCreacion
+            // 
+            this.erpFechaCreacion.ContainerControl = this;
             // 
             // FrmPrograma
             // 
@@ -387,6 +424,12 @@
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCanal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTitulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFechaCreacion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,7 +442,6 @@
         private System.Windows.Forms.TextBox txtParametro;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.GroupBox gbxListado;
-        private System.Windows.Forms.DataGridView dgvLista;
         private System.Windows.Forms.Panel pnlAcciones;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnEditar;
@@ -412,7 +454,7 @@
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Label lblFechaCreacion;
         private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.TextBox txtProductor;
         private System.Windows.Forms.NumericUpDown nudDuracion;
@@ -420,6 +462,13 @@
         private System.Windows.Forms.Button btnCanelar;
         private System.Windows.Forms.DateTimePicker dtpFechaCreacion;
         private System.Windows.Forms.ComboBox cbxCanal;
+        private System.Windows.Forms.DataGridView dgvLista;
+        private System.Windows.Forms.ErrorProvider erpCanal;
+        private System.Windows.Forms.ErrorProvider erpTitulo;
+        private System.Windows.Forms.ErrorProvider erpDescripcion;
+        private System.Windows.Forms.ErrorProvider erpDuracion;
+        private System.Windows.Forms.ErrorProvider erpProductor;
+        private System.Windows.Forms.ErrorProvider erpFechaCreacion;
     }
 }
 

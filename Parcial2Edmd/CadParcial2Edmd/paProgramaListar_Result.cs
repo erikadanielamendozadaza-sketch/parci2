@@ -17,7 +17,6 @@ namespace CadParcial2Edmd
         public int idCanal { get; set; }
         public string titulo { get; set; }
         public string descripcion { get; set; }
-        public string nombreCanal { get; set; }
         public int duracion { get; set; }
         public string productor { get; set; }
         public System.DateTime fechaEstreno { get; set; }
