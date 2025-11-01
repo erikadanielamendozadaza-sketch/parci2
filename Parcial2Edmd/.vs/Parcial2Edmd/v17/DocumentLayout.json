@@ -1,12 +1,90 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF50E1A-42F4-4D57-A9AE-12210EFB461C}|CadParcial2Edmd\\CadParcial2Edmd.csproj|c:\\users\\terabyte10\\desktop\\nueva carpeta\\segundoparcial\\parcial2edmd\\cadparcial2edmd\\paprogramalistar_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF50E1A-42F4-4D57-A9AE-12210EFB461C}|CadParcial2Edmd\\CadParcial2Edmd.csproj|solutionrelative:cadparcial2edmd\\paprogramalistar_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E92418-AE43-40D2-8EA3-862022793DF0}|CpParcial2Edmd\\CpParcial2Edmd.csproj|c:\\users\\terabyte10\\desktop\\nueva carpeta\\segundoparcial\\parcial2edmd\\cpparcial2edmd\\frmprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2E92418-AE43-40D2-8EA3-862022793DF0}|CpParcial2Edmd\\CpParcial2Edmd.csproj|solutionrelative:cpparcial2edmd\\frmprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E92418-AE43-40D2-8EA3-862022793DF0}|CpParcial2Edmd\\CpParcial2Edmd.csproj|c:\\users\\terabyte10\\desktop\\nueva carpeta\\segundoparcial\\parcial2edmd\\cpparcial2edmd\\frmprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2E92418-AE43-40D2-8EA3-862022793DF0}|CpParcial2Edmd\\CpParcial2Edmd.csproj|solutionrelative:cpparcial2edmd\\frmprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmPrograma.cs",
+              "DocumentMoniker": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CpParcial2Edmd\\FrmPrograma.cs",
+              "RelativeDocumentMoniker": "CpParcial2Edmd\\FrmPrograma.cs",
+              "ToolTip": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CpParcial2Edmd\\FrmPrograma.cs",
+              "RelativeToolTip": "CpParcial2Edmd\\FrmPrograma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T13:54:07.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmPrograma.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CpParcial2Edmd\\FrmPrograma.cs",
+              "RelativeDocumentMoniker": "CpParcial2Edmd\\FrmPrograma.cs",
+              "ToolTip": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CpParcial2Edmd\\FrmPrograma.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpParcial2Edmd\\FrmPrograma.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T13:36:05.812Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Parcial2Edmd.sql ",
+              "DocumentMoniker": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd.sql",
+              "RelativeDocumentMoniker": "..\\Parcial2Edmd.sql",
+              "ToolTip": "Parcial2Edmd.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-01T13:32:14.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "paProgramaListar_Result.cs",
+              "DocumentMoniker": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CadParcial2Edmd\\paProgramaListar_Result.cs",
+              "RelativeDocumentMoniker": "CadParcial2Edmd\\paProgramaListar_Result.cs",
+              "ToolTip": "C:\\Users\\TERABYTE10\\Desktop\\Nueva carpeta\\segundoparcial\\Parcial2Edmd\\CadParcial2Edmd\\paProgramaListar_Result.cs",
+              "RelativeToolTip": "CadParcial2Edmd\\paProgramaListar_Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T13:50:36.458Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

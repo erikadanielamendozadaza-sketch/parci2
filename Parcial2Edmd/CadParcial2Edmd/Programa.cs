@@ -22,6 +22,7 @@ namespace CadParcial2Edmd
         public string productor { get; set; }
         public System.DateTime fechaEstreno { get; set; }
         public short estado { get; set; }
+        public string tipo { get; set; }
     
         public virtual Canal Canal { get; set; }
     }

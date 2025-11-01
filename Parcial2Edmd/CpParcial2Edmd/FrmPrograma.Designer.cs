@@ -61,6 +61,9 @@
             this.erpDuracion = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpProductor = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpFechaCreacion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.cbxTipo = new System.Windows.Forms.ComboBox();
+            this.erpTipo = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -72,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaCreacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -238,6 +242,8 @@
             // 
             // gbxDatos
             // 
+            this.gbxDatos.Controls.Add(this.cbxTipo);
+            this.gbxDatos.Controls.Add(this.lblTipo);
             this.gbxDatos.Controls.Add(this.cbxCanal);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.Controls.Add(this.btnCanelar);
@@ -400,6 +406,35 @@
             // 
             this.erpFechaCreacion.ContainerControl = this;
             // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(348, 129);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(44, 17);
+            this.lblTipo.TabIndex = 23;
+            this.lblTipo.Text = "Tipo:";
+            // 
+            // cbxTipo
+            // 
+            this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxTipo.FormattingEnabled = true;
+            this.cbxTipo.Items.AddRange(new object[] {
+            "Noticiero",
+            "Serie",
+            "Película",
+            "Deportes",
+            "Animado"});
+            this.cbxTipo.Location = new System.Drawing.Point(493, 121);
+            this.cbxTipo.Name = "cbxTipo";
+            this.cbxTipo.Size = new System.Drawing.Size(184, 25);
+            this.cbxTipo.TabIndex = 24;
+            // 
+            // erpTipo
+            // 
+            this.erpTipo.ContainerControl = this;
+            // 
             // FrmPrograma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -416,6 +451,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmPrograma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Programa - Parcial2 :::";
             this.Load += new System.EventHandler(this.FrmPrograma_Load);
             this.gbxListado.ResumeLayout(false);
@@ -430,6 +466,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpDuracion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpProductor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaCreacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTipo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,6 +506,9 @@
         private System.Windows.Forms.ErrorProvider erpDuracion;
         private System.Windows.Forms.ErrorProvider erpProductor;
         private System.Windows.Forms.ErrorProvider erpFechaCreacion;
+        private System.Windows.Forms.ComboBox cbxTipo;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.ErrorProvider erpTipo;
     }
 }
 

@@ -31,6 +31,7 @@ namespace ClnParcial2Edmd
                 existe.productor = programa.productor;
                 existe.fechaEstreno = programa.fechaEstreno;
                 existe.estado = programa.estado;
+                existe.tipo = programa.tipo;
                 return context.SaveChanges();
             }
         }

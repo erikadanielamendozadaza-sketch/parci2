@@ -35,6 +35,8 @@ CREATE TABLE Programa(
 	CONSTRAINT fk_Programa_Canal FOREIGN KEY (idCanal) REFERENCES Canal(id)
 );
 
+ALTER TABLE Programa ADD tipo VARCHAR(15);
+
 GO
 DROP PROC IF EXISTS paCanalListar;
 GO
@@ -57,7 +59,7 @@ GO
 CREATE PROC paProgramaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT p.id, p.idCanal, c.nombre AS nombreCanal, p.titulo, p.descripcion, p.duracion, p.productor, p.fechaEstreno, p.estado
+    SELECT p.id, p.idCanal, c.nombre AS nombreCanal, p.titulo, p.descripcion, p.duracion, p.productor, p.fechaEstreno, p.tipo, p.estado
     FROM Programa p
     INNER JOIN Canal c ON c.id = p.idCanal
     WHERE p.estado > -1 

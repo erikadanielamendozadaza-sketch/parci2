@@ -21,6 +21,7 @@
     <Property Name="productor" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="fechaEstreno" Type="date" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="15" />
   </EntityType>
   <Association Name="fk_Programa_Canal">
     <End Role="Canal" Type="Self.Canal" Multiplicity="1" />

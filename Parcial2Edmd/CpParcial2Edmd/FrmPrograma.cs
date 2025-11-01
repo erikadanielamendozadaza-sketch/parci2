@@ -35,6 +35,7 @@ namespace CpParcial2Edmd
             dgvLista.Columns["duracion"].HeaderText = "Duración";
             dgvLista.Columns["productor"].HeaderText = "Productor";
             dgvLista.Columns["fechaEstreno"].HeaderText = "Fecha de Estreno";
+            dgvLista.Columns["tipo"].HeaderText = "Tipo";
 
             if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["titulo"];
             btnEditar.Enabled = lista.Count > 0;
@@ -77,6 +78,7 @@ namespace CpParcial2Edmd
             nudDuracion.Value = programa.duracion;
             txtProductor.Text = programa.productor;
             dtpFechaCreacion.Value = programa.fechaEstreno;
+            cbxTipo.Text = programa.tipo;
 
             txtTitulo.Focus();
         }
@@ -117,6 +119,7 @@ namespace CpParcial2Edmd
             erpDuracion.Clear();
             erpProductor.Clear();
             erpFechaCreacion.Clear();
+            erpTipo.Clear();
 
             if (string.IsNullOrEmpty(cbxCanal.Text))
             {
@@ -148,6 +151,11 @@ namespace CpParcial2Edmd
                 erpFechaCreacion.SetError(dtpFechaCreacion, "La Fecha de Creacion debe ser válida (no futura)");
                 esValido = false;
             }
+            if (string.IsNullOrEmpty(cbxTipo.Text))
+            {
+                erpTipo.SetError(cbxTipo, "El Tipo es obligatorio");
+                esValido = false;
+            }
             return esValido;
         }
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -162,6 +170,7 @@ namespace CpParcial2Edmd
                 programa.idCanal = (int)cbxCanal.SelectedValue;
                 programa.duracion = (int)nudDuracion.Value;
                 programa.fechaEstreno = dtpFechaCreacion.Value;
+                programa.tipo = cbxTipo.Text;
                 if (esNuevo)
                 {
                     programa.estado = 1;
@@ -189,7 +198,7 @@ namespace CpParcial2Edmd
             {
                 ProgramaCln.eliminar(id);
                 listar();
-                MessageBox.Show("Programa dado de baja correctamente", "::: Mensaje - Minerva :::",
+                MessageBox.Show("Programa dado de baja correctamente", "::: Mensaje - Programa :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

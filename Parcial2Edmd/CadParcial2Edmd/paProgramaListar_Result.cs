@@ -10,16 +10,19 @@
 namespace CadParcial2Edmd
 {
     using System;
-    
+    using System.Security.Policy;
+
     public partial class paProgramaListar_Result
     {
         public int id { get; set; }
         public int idCanal { get; set; }
         public string titulo { get; set; }
         public string descripcion { get; set; }
+        public string nombreCanal { get; set; }
         public int duracion { get; set; }
         public string productor { get; set; }
         public System.DateTime fechaEstreno { get; set; }
+        public string tipo { get; set; }
         public short estado { get; set; }
     }
 }
