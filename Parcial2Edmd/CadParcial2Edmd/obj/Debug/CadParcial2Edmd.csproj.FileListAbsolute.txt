@@ -1,0 +1,12 @@
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\CadParcial2Edmd.dll.config
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\CadParcial2Edmd.dll
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\CadParcial2Edmd.pdb
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\EntityFramework.dll
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\EntityFramework.xml
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\obj\Debug\CadParcial2Edmd.csproj.AssemblyReference.cache
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\obj\Debug\CadParcial2Edmd.csproj.CoreCompileInputs.cache
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\obj\Debug\CadParci.17B08047.Up2Date
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\obj\Debug\CadParcial2Edmd.dll
+C:\Users\TERABYTE10\Desktop\Nueva carpeta\segundoparcial\Parcial2Edmd\CadParcial2Edmd\obj\Debug\CadParcial2Edmd.pdb
